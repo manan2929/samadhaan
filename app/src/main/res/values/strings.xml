@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Samadhaan</string>
+    <string name="facebook_app_id">1068783930296029</string>
+    <string name="fb_login_protocol_scheme">fb1068783930296029</string>
+</resources>

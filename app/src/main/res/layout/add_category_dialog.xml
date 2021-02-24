@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/gradientbackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/signupheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/productsansregular"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/formsign"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/signupheading"
+        app:lottie_fileName="signup.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/et_emailsignup"
+        android:textColorHint="#fff"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:background="@drawable/gradientsix"
+        android:textColor="#fff"
+        android:fontFamily="@font/productsansregular"
+        android:hint="Enter your Email Id"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/signupheading"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/et_passsignup"
+        android:textColorHint="#fff"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:background="@drawable/gradientsix"
+        android:textColor="#fff"
+        android:fontFamily="@font/productsansregular"
+        android:hint="Enter your Password"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/et_emailsignup"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupbtn"
+        android:text="Proceed"
+        android:layout_marginRight="10dp"
+        android:textColor="#fff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/productsansregular"
+        android:background="@drawable/gradientsix"
+        android:layout_below="@+id/et_passsignup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+
+</RelativeLayout>

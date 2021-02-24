@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "608041725265",
+    "project_id": "samadhaan-ea2b9",
+    "storage_bucket": "samadhaan-ea2b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608041725265:android:87b67e220b2a18050eb770",
+        "android_client_info": {
+          "package_name": "com.example.samadhaan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608041725265-vhgprbvivof0n6uu44vjl9bvia2b5gvr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV7bLeUL7ERKQ9HVRPPOPbZZ3zIQrfdjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "608041725265-vhgprbvivof0n6uu44vjl9bvia2b5gvr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

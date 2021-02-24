@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmailActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/intro"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradientfive">
+
+
+
+
+        <TextView
+            android:id="@+id/welcdef"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Email Address for Verification"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/productsansregular"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/anim"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/welcdef"
+            app:lottie_fileName="woman.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true" />
+
+        <TextView
+            android:id="@+id/emaildesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/anim"
+            android:layout_below="@+id/welcdef"
+            android:text="Use your Email Id and your password to login/signup to your account"
+            android:textSize="14sp"
+            android:textColor="#000"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/productsansregular"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:id="@+id/et_email"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:background="@drawable/maldives"
+        android:textStyle="bold"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:fontFamily="@font/productsansregular"
+        android:hint="Enter your Email Id"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/intro"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:id="@+id/et_pass"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:background="@drawable/maldives"
+        android:textStyle="bold"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:fontFamily="@font/productsansregular"
+        android:hint="Enter your Password"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/et_email"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/proceeed"
+        android:text="Sign Up"
+        android:textColor="#000"
+        android:fontFamily="@font/productsansregular"
+        android:background="@drawable/gradientfive"
+        android:layout_below="@+id/et_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginbtn"
+        android:text="Login"
+        android:textColor="#000"
+        android:fontFamily="@font/productsansregular"
+        android:background="@drawable/gradientfive"
+        android:layout_below="@+id/proceeed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/orr"
+        android:text="OR"
+        android:textSize="20sp"
+        android:layout_below="@+id/loginbtn"
+        android:textColor="#000"
+        android:fontFamily="@font/productsansregular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"/>
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/facebook"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        fontFamily="@font/productsansregular"
+        android:layout_marginTop="25dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/orr" />
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/google"
+        android:text="Login with Google"
+        android:textColor="#fff"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/productsansregular"
+        android:layout_below="@+id/facebook"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"/>
+
+</RelativeLayout>
+</ScrollView>

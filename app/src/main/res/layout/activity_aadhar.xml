@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#0198e1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AadharActivity">
+
+    <TextView
+        android:id="@+id/aadharHeading"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:text="Aadhar Card"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/txt_aadhar"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:text="Aadhaar (English: foundation or base) is a 12-digit unique identity number that can be obtained voluntarily by residents or passport holders of India, based on their biometric and demographic data."
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:layout_below="@+id/aadharHeading"
+        android:scrollbars="vertical"/>
+    <Button
+        android:id="@+id/returnn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
+        android:textColor="#ffffff"
+        android:layout_below="@id/txt_aadhar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Return"/>
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#0198e1"
+    android:layout_height="match_parent"
+    tools:context=".AadharActivity">
+
+    <TextView
+        android:id="@+id/pancardHeading"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pan Card"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/txt_pancard"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:text="A permanent account number is a ten-character alphanumeric identifier, issued in the form of a laminated PAN card, by the Indian Income Tax Department, to any person who applies for it or to whom the department allots the number without an application"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:layout_below="@+id/pancardHeading"
+        android:scrollbars="vertical"/>
+
+    <Button
+        android:id="@+id/returnn1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_pancard"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corners"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:text="Return"/>
+
+</RelativeLayout></ScrollView>

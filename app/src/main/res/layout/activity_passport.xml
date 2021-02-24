@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0198e1"
+    tools:context=".PassportActivity">
+
+    <TextView
+        android:id="@+id/passportHeading"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Passport"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/txt_passport"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:text="A passport is a travel document, usually issued by a country's government to its citizens, that certifies the identity and nationality of its holder primarily for the purpose of international travel.[1] Standard passports may contain information such as the holder's name, place and date of birth, photograph, signature, and other relevant identifying information"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:layout_below="@+id/passportHeading"
+        android:scrollbars="vertical"/>
+
+    <Button
+        android:id="@+id/returnn2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_passport"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corners"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:text="Return"/>
+
+</RelativeLayout>
+</ScrollView>
